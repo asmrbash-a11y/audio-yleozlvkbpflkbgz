@@ -1,5 +1,6 @@
 """Soundtrack: voice + CC0 foley + synthesized thunder/paper sweeps, mixed under the narration."""
-import json, os, subprocess, math
+import json, math, os, subprocess
+import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 KIT = os.path.join(HERE, "..", "reel-studio", "Sound-Kits", "cc0")
@@ -85,11 +86,27 @@ def build_cues(tl):
     add(S("riser"), 17.9, 0.18)
 
 
-SFX_SCALE = 0.50   # المؤثرات تجلس 18.6 dB تحت التعليق (كانت ~10 dB): خافتة ومسموعة
+# مستويات الصوت — عُدِّلت مرتين بناءً على ملاحظات صاحب العمل بأن المؤثرات مرفوعة
+SFX_SCALE = 0.354        # –3 dB عن نسخة 0.50
+HIT_TRIM = 0.794         # –2 dB إضافية على العابر القوية (رعد/شرارة/هبوط/رايزر)
+SFX_CEILING_DBFS = -22.0 # سقف ذروة المؤثرات: تبقى 20 dB تحت أقصى التعليق (−1.9 dBFS)
+HIT_PREFIXES = ("thunder", "crack", "landing", "riser")
 
 
-def mix(voice="assets/voice.m4a", out="renders/soundtrack.m4a"):
-    """التعليق يُطبَّع مرة واحدة إلى -14 LUFS، والمؤثرات تُضاف بمستواها الهادئ، ثم limiter فقط.
+def _is_hit(path):
+    return os.path.basename(path).startswith(HIT_PREFIXES)
+
+
+def _peak_dbfs(path):
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-ac", "1", "-ar", "48000",
+                          "-f", "s16le", "-"], capture_output=True).stdout
+    x = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+    return 20 * math.log10(max(float(abs(x).max()), 1e-9))
+
+
+def mix(voice="assets/voice.m4a", out="renders/soundtrack.m4a", stem="renders/stem_raw.wav"):
+    """1) يُبنى مسار المؤثرات وحده، 2) يُثبَّت سقفه عند SFX_CEILING_DBFS،
+    3) التعليق يُطبَّع مرة واحدة إلى −14 LUFS، 4) يُجمعان ثم limiter فقط.
 
     لا loudnorm بعد المزج: تصفير الجهارة على المزيج كان يرفع المؤثرات معه.
     """
@@ -99,20 +116,27 @@ def mix(voice="assets/voice.m4a", out="renders/soundtrack.m4a"):
     chains = []
     for i, (f, t, g) in enumerate(CUE, start=1):
         inputs += ["-i", f]
+        gg = g * SFX_SCALE * (HIT_TRIM if _is_hit(f) else 1.0)
         ms = int(max(0, t) * 1000)
         chains.append(f"[{i}:a]aformat=sample_rates=48000:channel_layouts=mono,"
-                      f"volume={round(g * SFX_SCALE, 4)},adelay={ms}|{ms}[s{i}]")
+                      f"volume={round(gg, 4)},adelay={ms}|{ms}[s{i}]")
     n = len(CUE)
-    sfx = (";".join(chains) + ";" + "".join(f"[s{i}]" for i in range(1, n + 1)) +
-           f"amix=inputs={n}:normalize=0:dropout_transition=0,alimiter=limit=0.8[sfx]")
-    vc = ("[0:a]aformat=sample_rates=48000:channel_layouts=mono,highpass=f=75,"
+    subprocess.run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex",
+                    ";".join(chains) + ";" + "".join(f"[s{i}]" for i in range(1, n + 1)) +
+                    f"amix=inputs={n}:normalize=0:dropout_transition=0[out]",
+                    "-map", "[out]", "-c:a", "pcm_s16le", stem], check=True)
+    g = 10 ** ((SFX_CEILING_DBFS - _peak_dbfs(stem)) / 20)
+    fc = (f"[1:a]volume={g:.4f},alimiter=limit=0.8[sfx];"
+          "[0:a]aformat=sample_rates=48000:channel_layouts=mono,highpass=f=75,"
           "acompressor=threshold=0.12:ratio=2.2:attack=12:release=180,"
-          "loudnorm=I=-14:TP=-2:LRA=9[voice]")
-    mixed = ("[voice][sfx]amix=inputs=2:normalize=0:dropout_transition=0,"
-             "alimiter=limit=0.89:level=false,aresample=48000[out]")
-    run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", ";".join([sfx, vc, mixed]),
-         "-map", "[out]", "-c:a", "aac", "-b:a", "96k", "-ac", "1", "-ar", "48000", out])
-    print("mixed", out, "cues:", n, "sfx scale:", SFX_SCALE)
+          "loudnorm=I=-14:TP=-2:LRA=9[voice];"
+          "[voice][sfx]amix=inputs=2:normalize=0:dropout_transition=0,"
+          "alimiter=limit=0.89:level=false,aresample=48000[out]")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", voice, "-i", stem, "-filter_complex", fc,
+                    "-map", "[out]", "-c:a", "aac", "-b:a", "96k", "-ac", "1", "-ar", "48000", out],
+                   check=True)
+    print(f"mixed {out}: {n} cues · sfx scale {SFX_SCALE} · ceiling {SFX_CEILING_DBFS} dBFS "
+          f"(gain {20*math.log10(g):+.1f} dB)")
 
 
 if __name__ == "__main__":
