@@ -182,6 +182,88 @@ def riser(dur=1.6):
     return norm(x + tone, -5)
 
 
+
+
+# ------------------------------------------------------------------ أصوات النصف الثاني
+def water(dur=14.0):
+    """جدول ماء رقراق: ضجيج مُرشَّح بتعديل عشوائي — يتبع النصيحة «اتبعي مجرى الماء»."""
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    base = band(noise(n), 380, 5200, 2)
+    bubbles = np.zeros(n, np.float32)
+    for _ in range(int(28 * dur)):
+        p = RNG.integers(0, n - 1200)
+        ln = int(RNG.integers(120, 420))
+        f = RNG.uniform(600, 2400)
+        seg = np.sin(2 * np.pi * f * np.arange(ln) / SR).astype(np.float32) * np.exp(-np.arange(ln) / (ln * 0.3)).astype(np.float32)
+        bubbles[p:p + ln] += seg * RNG.uniform(0.05, 0.22)
+    mod = (0.6 + 0.25 * np.sin(2 * np.pi * 0.11 * t) + 0.15 * np.sin(2 * np.pi * 0.29 * t + 0.7)).astype(np.float32)
+    out = band(base, 400, 4800, 1) * mod * 0.5 + bubbles
+    return norm(soft_reverb(out, 0.16, 0.2, seed=21), -8)
+
+
+def heartbeat(dur=14.0, bpm=62.0):
+    """نَبضتان لكل ضربة — لأيام الألم والجوع والخوف."""
+    n = int(dur * SR)
+    out = np.zeros(n, np.float32)
+    per = 60.0 / bpm
+    t0 = 0.0
+    while t0 < dur - 0.5:
+        for off, amp in ((0.0, 1.0), (0.26, 0.62)):
+            m = int(0.32 * SR)
+            tt = np.arange(m) / SR
+            f = 58 * np.exp(-14 * tt) + 34
+            th = np.sin(2 * np.pi * np.cumsum(f) / SR).astype(np.float32) * np.exp(-16 * tt).astype(np.float32)
+            i = int((t0 + off) * SR)
+            if i + m < n:
+                out[i:i + m] += th * amp
+        t0 += per
+    return norm(lowpass(out, 220, 2), -7)
+
+
+def ticks(dur=14.0, rate=2.2):
+    """تكّات إيقاعية هادئة (ساعات تمر) — آخر 10 أيام."""
+    n = int(dur * SR)
+    out = np.zeros(n, np.float32)
+    per = 1.0 / rate
+    t0 = 0.0
+    k = 0
+    while t0 < dur - 0.2:
+        m = int(0.09 * SR)
+        tt = np.arange(m) / SR
+        f = 2600 if k % 2 == 0 else 2100
+        seg = (np.sin(2 * np.pi * f * tt) * np.exp(-45 * tt)).astype(np.float32)
+        i = int(t0 * SR)
+        if i + m < n:
+            out[i:i + m] += seg * (1.0 if k % 2 == 0 else 0.75)
+        t0 += per
+        k += 1
+    return norm(band(out, 1500, 4000), -10)
+
+
+def chime(dur=2.6, f0=1180.0):
+    """جرس دافئ للخلاص/الكوخ."""
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    parts = [(1.0, 1.0, 2.6), (2.01, 0.45, 3.4), (2.98, 0.25, 4.4), (4.07, 0.12, 5.5)]
+    out = np.zeros(n, np.float32)
+    for mult, amp, dec in parts:
+        out += (amp * np.sin(2 * np.pi * f0 * mult * t) * np.exp(-dec * t)).astype(np.float32)
+    out *= np.minimum(1, t / 0.006).astype(np.float32)
+    return norm(soft_reverb(out, 0.6, 0.45, seed=31), -4)
+
+
+def animal(dur=2.2):
+    """نداء حيوان بعيد — منخفض وناعم، لا مخيف."""
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    f = (150 + 60 * np.sin(np.pi * np.minimum(t / dur, 1))).astype(np.float32)
+    tone = np.sin(2 * np.pi * np.cumsum(f) / SR).astype(np.float32)
+    breath = band(noise(n), 200, 1800) * 0.25
+    e = np.minimum(1, t / 0.25) * np.exp(-1.1 * np.maximum(0, t - 0.3)).astype(np.float32)
+    return norm(lowpass((tone * 0.8 + breath) * e, 2600, 2), -14)
+
+
 def write(path, x):
     import wave
     x = np.clip(x, -1, 1)
@@ -204,6 +286,12 @@ def build_all(outdir):
         "crack.wav": crack(),
         "paper.wav": paper(),
         "riser.wav": riser(),
+        "water.wav": water(14.0),
+        "heartbeat.wav": heartbeat(14.0),
+        "ticks.wav": ticks(14.0),
+        "chime.wav": chime(),
+        "chime_low.wav": chime(3.2, 780.0),
+        "animal.wav": animal(),
     }
     for k, v in files.items():
         write(os.path.join(outdir, k), v)
