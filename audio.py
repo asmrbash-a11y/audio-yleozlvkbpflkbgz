@@ -85,7 +85,14 @@ def build_cues(tl):
     add(S("riser"), 17.9, 0.18)
 
 
+SFX_SCALE = 0.50   # المؤثرات تجلس 18.6 dB تحت التعليق (كانت ~10 dB): خافتة ومسموعة
+
+
 def mix(voice="assets/voice.m4a", out="renders/soundtrack.m4a"):
+    """التعليق يُطبَّع مرة واحدة إلى -14 LUFS، والمؤثرات تُضاف بمستواها الهادئ، ثم limiter فقط.
+
+    لا loudnorm بعد المزج: تصفير الجهارة على المزيج كان يرفع المؤثرات معه.
+    """
     tl = json.load(open("data/timeline.json"))
     build_cues(tl)
     inputs = ["-i", voice]
@@ -94,20 +101,18 @@ def mix(voice="assets/voice.m4a", out="renders/soundtrack.m4a"):
         inputs += ["-i", f]
         ms = int(max(0, t) * 1000)
         chains.append(f"[{i}:a]aformat=sample_rates=48000:channel_layouts=mono,"
-                      f"volume={g},adelay={ms}|{ms}[s{i}]")
+                      f"volume={round(g * SFX_SCALE, 4)},adelay={ms}|{ms}[s{i}]")
     n = len(CUE)
-    mixed = "".join(f"[s{i}]" for i in range(1, n + 1))
-    fc = ";".join(chains) + f";{mixed}amix=inputs={n}:normalize=0:dropout_transition=0,"
-    fc += "alimiter=limit=0.95[sfx];"
-    fc += ("[0:a]aformat=sample_rates=48000:channel_layouts=mono,"
-           "highpass=f=75,acompressor=threshold=0.12:ratio=2.2:attack=12:release=180,"
-           "loudnorm=I=-15.5:TP=-2:LRA=9[voice];"
-           "[voice][sfx]amix=inputs=2:normalize=0:dropout_transition=0,"
-           "loudnorm=I=-14:TP=-1.5:LRA=10,aresample=48000[out]")
-    cmd = ["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", fc,
-           "-map", "[out]", "-c:a", "aac", "-b:a", "128k", out]
-    run(cmd)
-    print("mixed", out, "cues:", n)
+    sfx = (";".join(chains) + ";" + "".join(f"[s{i}]" for i in range(1, n + 1)) +
+           f"amix=inputs={n}:normalize=0:dropout_transition=0,alimiter=limit=0.8[sfx]")
+    vc = ("[0:a]aformat=sample_rates=48000:channel_layouts=mono,highpass=f=75,"
+          "acompressor=threshold=0.12:ratio=2.2:attack=12:release=180,"
+          "loudnorm=I=-14:TP=-2:LRA=9[voice]")
+    mixed = ("[voice][sfx]amix=inputs=2:normalize=0:dropout_transition=0,"
+             "alimiter=limit=0.89:level=false,aresample=48000[out]")
+    run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", ";".join([sfx, vc, mixed]),
+         "-map", "[out]", "-c:a", "aac", "-b:a", "96k", "-ac", "1", "-ar", "48000", out])
+    print("mixed", out, "cues:", n, "sfx scale:", SFX_SCALE)
 
 
 if __name__ == "__main__":
