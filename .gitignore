@@ -1,0 +1,6 @@
+# heavy intermediates stay out of the repo
+assets/voice.m4a
+assets/soundtrack.m4a
+renders/
+__pycache__/
+*.pyc

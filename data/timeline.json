@@ -1,0 +1,1932 @@
+{
+ "duration": 90.0,
+ "words": [
+  {
+   "i": 0,
+   "text": "في",
+   "start": 0.0,
+   "end": 0.36,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 1,
+   "text": "عام",
+   "start": 0.36,
+   "end": 0.62,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 2,
+   "text": "1971",
+   "start": 0.62,
+   "end": 1.66,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 3,
+   "text": "بدأت",
+   "start": 1.66,
+   "end": 3.58,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 4,
+   "text": "واحدة",
+   "start": 3.58,
+   "end": 4.0,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 5,
+   "text": "من",
+   "start": 4.0,
+   "end": 4.74,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 6,
+   "text": "أغرب",
+   "start": 4.74,
+   "end": 5.24,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 7,
+   "text": "قصص",
+   "start": 5.24,
+   "end": 5.62,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 8,
+   "text": "نجاة",
+   "start": 5.62,
+   "end": 6.02,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 9,
+   "text": "في",
+   "start": 6.02,
+   "end": 6.14,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 10,
+   "text": "تاريخ",
+   "start": 6.14,
+   "end": 6.48,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 11,
+   "text": "الطيران",
+   "start": 6.48,
+   "end": 7.0,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 12,
+   "text": "كانت",
+   "start": 7.0,
+   "end": 7.98,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 13,
+   "text": "جوليان",
+   "start": 7.98,
+   "end": 8.4,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 14,
+   "text": "كوبكه",
+   "start": 8.4,
+   "end": 9.02,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 15,
+   "text": "تبلغ",
+   "start": 9.02,
+   "end": 9.46,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 16,
+   "text": "17",
+   "start": 9.46,
+   "end": 9.72,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 17,
+   "text": "عاماً",
+   "start": 9.72,
+   "end": 10.46,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 18,
+   "text": "تحلق",
+   "start": 10.46,
+   "end": 11.3,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 19,
+   "text": "مع",
+   "start": 11.3,
+   "end": 11.44,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 20,
+   "text": "والدتها",
+   "start": 11.44,
+   "end": 12.02,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 21,
+   "text": "فوق",
+   "start": 12.02,
+   "end": 12.48,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 22,
+   "text": "غابات",
+   "start": 12.48,
+   "end": 12.88,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 23,
+   "text": "الأمازون",
+   "start": 12.88,
+   "end": 13.32,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 24,
+   "text": "في",
+   "start": 13.32,
+   "end": 13.48,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 25,
+   "text": "بيرو",
+   "start": 13.48,
+   "end": 13.88,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 26,
+   "text": "وفجأة...",
+   "start": 13.88,
+   "end": 15.26,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 27,
+   "text": "ضرب",
+   "start": 15.26,
+   "end": 16.16,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 28,
+   "text": "البرق",
+   "start": 16.16,
+   "end": 16.5,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 29,
+   "text": "الطائرة",
+   "start": 16.5,
+   "end": 16.98,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 30,
+   "text": "وسط عاصفة",
+   "start": 16.98,
+   "end": 18.06,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 31,
+   "text": "عنيفة",
+   "start": 18.06,
+   "end": 19.04,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 32,
+   "text": "انفصل",
+   "start": 19.04,
+   "end": 19.7,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 33,
+   "text": "جناحها",
+   "start": 19.7,
+   "end": 20.28,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 34,
+   "text": "وبدأت",
+   "start": 20.28,
+   "end": 21.28,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 35,
+   "text": "تتفكك",
+   "start": 21.28,
+   "end": 21.74,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 36,
+   "text": "في",
+   "start": 21.74,
+   "end": 21.9,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 37,
+   "text": "السماء",
+   "start": 21.9,
+   "end": 22.2,
+   "pause_after": 0.8,
+   "emphasis": false
+  },
+  {
+   "i": 38,
+   "text": "خلال",
+   "start": 23.0,
+   "end": 23.62,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 39,
+   "text": "لحظات",
+   "start": 23.62,
+   "end": 24.14,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 40,
+   "text": "سقطت",
+   "start": 24.14,
+   "end": 25.04,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 41,
+   "text": "جوليان",
+   "start": 25.04,
+   "end": 25.48,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 42,
+   "text": "من",
+   "start": 25.48,
+   "end": 25.58,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 43,
+   "text": "ارتفاع",
+   "start": 25.58,
+   "end": 25.96,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 44,
+   "text": "يقارب",
+   "start": 25.96,
+   "end": 26.44,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 45,
+   "text": "3",
+   "start": 26.44,
+   "end": 26.72,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 46,
+   "text": "آلاف",
+   "start": 26.72,
+   "end": 27.4,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 47,
+   "text": "متر",
+   "start": 27.4,
+   "end": 28.32,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 48,
+   "text": "وهي",
+   "start": 28.32,
+   "end": 28.64,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 49,
+   "text": "لا",
+   "start": 28.64,
+   "end": 28.78,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 50,
+   "text": "تزال",
+   "start": 28.78,
+   "end": 29.06,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 51,
+   "text": "مربوطة",
+   "start": 29.06,
+   "end": 29.66,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 52,
+   "text": "بمقعدها",
+   "start": 29.66,
+   "end": 29.86,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 53,
+   "text": "",
+   "start": 29.86,
+   "end": 30.24,
+   "pause_after": 0.66,
+   "emphasis": false
+  },
+  {
+   "i": 54,
+   "text": "لكنها",
+   "start": 30.9,
+   "end": 31.36,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 55,
+   "text": "استيقظت",
+   "start": 31.36,
+   "end": 31.82,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 56,
+   "text": "في",
+   "start": 31.82,
+   "end": 31.96,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 57,
+   "text": "اليوم",
+   "start": 31.96,
+   "end": 32.18,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 58,
+   "text": "التالي",
+   "start": 32.18,
+   "end": 32.84,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 59,
+   "text": "وسط",
+   "start": 32.84,
+   "end": 33.3,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 60,
+   "text": "الغابة",
+   "start": 33.3,
+   "end": 34.08,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 61,
+   "text": "مصابة",
+   "start": 34.08,
+   "end": 34.7,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 62,
+   "text": "بكسر",
+   "start": 34.7,
+   "end": 35.16,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 63,
+   "text": "في",
+   "start": 35.16,
+   "end": 35.3,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 64,
+   "text": "الترقوة",
+   "start": 35.3,
+   "end": 35.92,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 65,
+   "text": "وجروح",
+   "start": 35.92,
+   "end": 36.48,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 66,
+   "text": "في",
+   "start": 36.48,
+   "end": 36.66,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 67,
+   "text": "جسدها",
+   "start": 36.66,
+   "end": 37.14,
+   "pause_after": 0.72,
+   "emphasis": false
+  },
+  {
+   "i": 68,
+   "text": "كانت",
+   "start": 37.86,
+   "end": 38.32,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 69,
+   "text": "والدتها",
+   "start": 38.32,
+   "end": 38.78,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 70,
+   "text": "مفقودة",
+   "start": 38.78,
+   "end": 39.74,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 71,
+   "text": "والطائرة",
+   "start": 39.74,
+   "end": 40.34,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 72,
+   "text": "محطمة",
+   "start": 40.34,
+   "end": 41.04,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 73,
+   "text": "ولم",
+   "start": 41.04,
+   "end": 41.78,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 74,
+   "text": "يكن",
+   "start": 41.78,
+   "end": 42.12,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 75,
+   "text": "حولها",
+   "start": 42.12,
+   "end": 42.52,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 76,
+   "text": "أحد",
+   "start": 42.52,
+   "end": 42.82,
+   "pause_after": 1.1,
+   "emphasis": false
+  },
+  {
+   "i": 77,
+   "text": "تذكرت",
+   "start": 43.92,
+   "end": 44.42,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 78,
+   "text": "نصيحة",
+   "start": 44.42,
+   "end": 44.78,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 79,
+   "text": "والدها",
+   "start": 44.78,
+   "end": 45.22,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 80,
+   "text": "اتبعي",
+   "start": 45.22,
+   "end": 46.1,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 81,
+   "text": "مجرى",
+   "start": 46.1,
+   "end": 46.44,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 82,
+   "text": "الماء",
+   "start": 46.44,
+   "end": 46.74,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 83,
+   "text": "فربما",
+   "start": 46.74,
+   "end": 47.56,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 84,
+   "text": "يقودك",
+   "start": 47.56,
+   "end": 48.02,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 85,
+   "text": "إلى",
+   "start": 48.02,
+   "end": 48.2,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 86,
+   "text": "البشر",
+   "start": 48.2,
+   "end": 48.48,
+   "pause_after": 0.84,
+   "emphasis": false
+  },
+  {
+   "i": 87,
+   "text": "فبدأت",
+   "start": 49.32,
+   "end": 49.86,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 88,
+   "text": "السير",
+   "start": 49.86,
+   "end": 50.14,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 89,
+   "text": "وحدها",
+   "start": 50.14,
+   "end": 50.52,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 90,
+   "text": "بين",
+   "start": 50.52,
+   "end": 51.14,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 91,
+   "text": "الحشرات",
+   "start": 51.14,
+   "end": 51.86,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 92,
+   "text": "والحيوانات",
+   "start": 51.86,
+   "end": 52.78,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 93,
+   "text": "المفترسة",
+   "start": 52.78,
+   "end": 53.8,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 94,
+   "text": "دون",
+   "start": 53.8,
+   "end": 54.14,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 95,
+   "text": "طعام",
+   "start": 54.14,
+   "end": 54.8,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 96,
+   "text": "",
+   "start": 54.8,
+   "end": 54.94,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 97,
+   "text": "تقريباً",
+   "start": 54.94,
+   "end": 55.68,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 98,
+   "text": "عشرة",
+   "start": 55.68,
+   "end": 56.42,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 99,
+   "text": "أيام",
+   "start": 56.42,
+   "end": 56.84,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 100,
+   "text": "من",
+   "start": 56.84,
+   "end": 57.98,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 101,
+   "text": "الألم",
+   "start": 57.98,
+   "end": 58.48,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 102,
+   "text": "والجوع",
+   "start": 58.48,
+   "end": 59.9,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 103,
+   "text": "والخوف",
+   "start": 59.9,
+   "end": 61.5,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 104,
+   "text": "حتى",
+   "start": 61.5,
+   "end": 62.6,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 105,
+   "text": "وجدت",
+   "start": 62.6,
+   "end": 63.04,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 106,
+   "text": "كوخاً",
+   "start": 63.04,
+   "end": 63.4,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 107,
+   "text": "صغيراً",
+   "start": 63.4,
+   "end": 64.06,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 108,
+   "text": "قرب",
+   "start": 64.06,
+   "end": 64.42,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 109,
+   "text": "النهر",
+   "start": 64.42,
+   "end": 64.68,
+   "pause_after": 1.0,
+   "emphasis": false
+  },
+  {
+   "i": 110,
+   "text": "وفي",
+   "start": 65.68,
+   "end": 66.28,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 111,
+   "text": "اليوم",
+   "start": 66.28,
+   "end": 66.5,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 112,
+   "text": "التالي",
+   "start": 66.5,
+   "end": 67.44,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 113,
+   "text": "وصل",
+   "start": 67.44,
+   "end": 67.9,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 114,
+   "text": "رجال",
+   "start": 67.9,
+   "end": 68.3,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 115,
+   "text": "محليون",
+   "start": 68.3,
+   "end": 69.0,
+   "pause_after": 0.63,
+   "emphasis": true
+  },
+  {
+   "i": 116,
+   "text": "فوجدوا",
+   "start": 69.63,
+   "end": 70.08,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 117,
+   "text": "",
+   "start": 70.08,
+   "end": 70.28,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 118,
+   "text": "الفتاة",
+   "start": 70.28,
+   "end": 70.62,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 119,
+   "text": "المنهكة",
+   "start": 70.62,
+   "end": 71.22,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 120,
+   "text": "وأنقذوها",
+   "start": 71.22,
+   "end": 71.96,
+   "pause_after": 0.37,
+   "emphasis": true
+  },
+  {
+   "i": 121,
+   "text": "نجت",
+   "start": 72.33,
+   "end": 72.78,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 122,
+   "text": "جوليان",
+   "start": 72.78,
+   "end": 73.2,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 123,
+   "text": "من",
+   "start": 73.2,
+   "end": 73.52,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 124,
+   "text": "سقوط",
+   "start": 73.52,
+   "end": 73.86,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 125,
+   "text": "طائرة",
+   "start": 73.86,
+   "end": 74.28,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 126,
+   "text": "ثم",
+   "start": 74.28,
+   "end": 75.28,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 127,
+   "text": "نجت",
+   "start": 75.28,
+   "end": 75.74,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 128,
+   "text": "من",
+   "start": 75.74,
+   "end": 76.0,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 129,
+   "text": "عشرة",
+   "start": 76.0,
+   "end": 76.46,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 130,
+   "text": "أيام",
+   "start": 76.46,
+   "end": 76.86,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 131,
+   "text": "في",
+   "start": 76.86,
+   "end": 77.2,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 132,
+   "text": "قلب",
+   "start": 77.2,
+   "end": 77.44,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 133,
+   "text": "الأمازون",
+   "start": 77.44,
+   "end": 77.9,
+   "pause_after": 0.78,
+   "emphasis": true
+  },
+  {
+   "i": 134,
+   "text": "لكنها",
+   "start": 78.68,
+   "end": 79.22,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 135,
+   "text": "كانت",
+   "start": 79.22,
+   "end": 79.56,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 136,
+   "text": "الناجية",
+   "start": 79.56,
+   "end": 79.96,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 137,
+   "text": "الوحيدة",
+   "start": 79.96,
+   "end": 80.58,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 138,
+   "text": "من",
+   "start": 80.58,
+   "end": 81.12,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 139,
+   "text": "بين",
+   "start": 81.12,
+   "end": 81.26,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 140,
+   "text": "92",
+   "start": 81.26,
+   "end": 81.7,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 141,
+   "text": "",
+   "start": 81.7,
+   "end": 82.28,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 142,
+   "text": "شخصاً",
+   "start": 82.28,
+   "end": 83.1,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 143,
+   "text": "كانوا",
+   "start": 83.1,
+   "end": 83.5,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 144,
+   "text": "على متن",
+   "start": 83.5,
+   "end": 83.9,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 145,
+   "text": "الطائرة",
+   "start": 83.9,
+   "end": 84.34,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 146,
+   "text": "أحياناً",
+   "start": 84.34,
+   "end": 85.36,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 147,
+   "text": "تكون",
+   "start": 85.36,
+   "end": 86.44,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 148,
+   "text": "الرغبة",
+   "start": 86.44,
+   "end": 86.82,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 149,
+   "text": "في",
+   "start": 86.82,
+   "end": 86.98,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 150,
+   "text": "الحياة",
+   "start": 86.98,
+   "end": 87.86,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 151,
+   "text": "أقوى",
+   "start": 87.86,
+   "end": 88.26,
+   "pause_after": 0.0,
+   "emphasis": true
+  },
+  {
+   "i": 152,
+   "text": "من",
+   "start": 88.26,
+   "end": 88.42,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 153,
+   "text": "كل",
+   "start": 88.42,
+   "end": 88.64,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 154,
+   "text": "احتمالات",
+   "start": 88.64,
+   "end": 89.28,
+   "pause_after": 0.0,
+   "emphasis": false
+  },
+  {
+   "i": 155,
+   "text": "الموت",
+   "start": 89.28,
+   "end": 89.6,
+   "pause_after": 0.0,
+   "emphasis": true
+  }
+ ],
+ "cues": [
+  {
+   "index": 0,
+   "tokens": [
+    0,
+    1,
+    2
+   ],
+   "start": 0.0,
+   "end": 1.64,
+   "lines": null,
+   "text": "في عام 1971"
+  },
+  {
+   "index": 1,
+   "tokens": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "start": 1.66,
+   "end": 5.220000000000001,
+   "lines": null,
+   "text": "بدأت واحدة من أغرب"
+  },
+  {
+   "index": 2,
+   "tokens": [
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "start": 5.24,
+   "end": 6.98,
+   "lines": null,
+   "text": "قصص نجاة في تاريخ الطيران"
+  },
+  {
+   "index": 3,
+   "tokens": [
+    12,
+    13,
+    14
+   ],
+   "start": 7.0,
+   "end": 9.0,
+   "lines": null,
+   "text": "كانت جوليان كوبكه"
+  },
+  {
+   "index": 4,
+   "tokens": [
+    15,
+    16,
+    17
+   ],
+   "start": 9.02,
+   "end": 10.440000000000001,
+   "lines": null,
+   "text": "تبلغ 17 عاماً"
+  },
+  {
+   "index": 5,
+   "tokens": [
+    18,
+    19,
+    20
+   ],
+   "start": 10.46,
+   "end": 12.0,
+   "lines": null,
+   "text": "تحلق مع والدتها"
+  },
+  {
+   "index": 6,
+   "tokens": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "start": 12.02,
+   "end": 13.860000000000001,
+   "lines": null,
+   "text": "فوق غابات الأمازون في بيرو"
+  },
+  {
+   "index": 7,
+   "tokens": [
+    26,
+    27,
+    28,
+    29
+   ],
+   "start": 13.88,
+   "end": 16.96,
+   "lines": null,
+   "text": "وفجأة... ضرب البرق الطائرة"
+  },
+  {
+   "index": 8,
+   "tokens": [
+    30,
+    31
+   ],
+   "start": 16.98,
+   "end": 19.02,
+   "lines": null,
+   "text": "وسط عاصفة عنيفة"
+  },
+  {
+   "index": 9,
+   "tokens": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+   ],
+   "start": 19.04,
+   "end": 22.65,
+   "lines": [
+    3,
+    3
+   ],
+   "text": "انفصل جناحها وبدأت تتفكك في السماء"
+  },
+  {
+   "index": 10,
+   "tokens": [
+    38,
+    39
+   ],
+   "start": 23.0,
+   "end": 24.12,
+   "lines": null,
+   "text": "خلال لحظات"
+  },
+  {
+   "index": 11,
+   "tokens": [
+    40,
+    41,
+    42,
+    43,
+    44
+   ],
+   "start": 24.14,
+   "end": 26.42,
+   "lines": null,
+   "text": "سقطت جوليان من ارتفاع يقارب"
+  },
+  {
+   "index": 12,
+   "tokens": [
+    45,
+    46,
+    47
+   ],
+   "start": 26.44,
+   "end": 28.3,
+   "lines": null,
+   "text": "3 آلاف متر"
+  },
+  {
+   "index": 13,
+   "tokens": [
+    48,
+    49,
+    50,
+    51,
+    52
+   ],
+   "start": 28.32,
+   "end": 30.31,
+   "lines": null,
+   "text": "وهي لا تزال مربوطة بمقعدها"
+  },
+  {
+   "index": 14,
+   "tokens": [
+    54,
+    55,
+    56,
+    57,
+    58
+   ],
+   "start": 30.9,
+   "end": 32.82,
+   "lines": null,
+   "text": "لكنها استيقظت في اليوم التالي"
+  },
+  {
+   "index": 15,
+   "tokens": [
+    59,
+    60
+   ],
+   "start": 32.84,
+   "end": 34.059999999999995,
+   "lines": null,
+   "text": "وسط الغابة"
+  },
+  {
+   "index": 16,
+   "tokens": [
+    61,
+    62,
+    63,
+    64
+   ],
+   "start": 34.08,
+   "end": 35.9,
+   "lines": [
+    2,
+    2
+   ],
+   "text": "مصابة بكسر في الترقوة"
+  },
+  {
+   "index": 17,
+   "tokens": [
+    65,
+    66,
+    67
+   ],
+   "start": 35.92,
+   "end": 37.59,
+   "lines": null,
+   "text": "وجروح في جسدها"
+  },
+  {
+   "index": 18,
+   "tokens": [
+    68,
+    69,
+    70
+   ],
+   "start": 37.86,
+   "end": 39.72,
+   "lines": null,
+   "text": "كانت والدتها مفقودة"
+  },
+  {
+   "index": 19,
+   "tokens": [
+    71,
+    72
+   ],
+   "start": 39.74,
+   "end": 41.019999999999996,
+   "lines": null,
+   "text": "والطائرة محطمة"
+  },
+  {
+   "index": 20,
+   "tokens": [
+    73,
+    74,
+    75,
+    76
+   ],
+   "start": 41.04,
+   "end": 43.27,
+   "lines": null,
+   "text": "ولم يكن حولها أحد"
+  },
+  {
+   "index": 21,
+   "tokens": [
+    77,
+    78,
+    79
+   ],
+   "start": 43.92,
+   "end": 45.199999999999996,
+   "lines": null,
+   "text": "تذكرت نصيحة والدها"
+  },
+  {
+   "index": 22,
+   "tokens": [
+    80,
+    81,
+    82
+   ],
+   "start": 45.22,
+   "end": 46.72,
+   "lines": null,
+   "text": "اتبعي مجرى الماء"
+  },
+  {
+   "index": 23,
+   "tokens": [
+    83,
+    84,
+    85,
+    86
+   ],
+   "start": 46.74,
+   "end": 48.93,
+   "lines": null,
+   "text": "فربما يقودك إلى البشر"
+  },
+  {
+   "index": 24,
+   "tokens": [
+    87,
+    88,
+    89
+   ],
+   "start": 49.32,
+   "end": 50.5,
+   "lines": [
+    2,
+    4
+   ],
+   "text": "فبدأت السير وحدها"
+  },
+  {
+   "index": 25,
+   "tokens": [
+    90,
+    91,
+    92,
+    93
+   ],
+   "start": 50.52,
+   "end": 53.779999999999994,
+   "lines": null,
+   "text": "بين الحشرات والحيوانات المفترسة"
+  },
+  {
+   "index": 26,
+   "tokens": [
+    94,
+    95,
+    97
+   ],
+   "start": 53.8,
+   "end": 55.66,
+   "lines": null,
+   "text": "دون طعام تقريباً"
+  },
+  {
+   "index": 27,
+   "tokens": [
+    98,
+    99
+   ],
+   "start": 55.68,
+   "end": 56.82,
+   "lines": null,
+   "text": "عشرة أيام"
+  },
+  {
+   "index": 28,
+   "tokens": [
+    100,
+    101,
+    102,
+    103
+   ],
+   "start": 56.84,
+   "end": 61.48,
+   "lines": null,
+   "text": "من الألم والجوع والخوف"
+  },
+  {
+   "index": 29,
+   "tokens": [
+    104,
+    105,
+    106,
+    107
+   ],
+   "start": 61.5,
+   "end": 64.04,
+   "lines": null,
+   "text": "حتى وجدت كوخاً صغيراً"
+  },
+  {
+   "index": 30,
+   "tokens": [
+    108,
+    109
+   ],
+   "start": 64.06,
+   "end": 65.13,
+   "lines": null,
+   "text": "قرب النهر"
+  },
+  {
+   "index": 31,
+   "tokens": [
+    110,
+    111,
+    112
+   ],
+   "start": 65.68,
+   "end": 67.42,
+   "lines": [
+    3,
+    2
+   ],
+   "text": "وفي اليوم التالي"
+  },
+  {
+   "index": 32,
+   "tokens": [
+    113,
+    114,
+    115
+   ],
+   "start": 67.44,
+   "end": 69.45,
+   "lines": null,
+   "text": "وصل رجال محليون"
+  },
+  {
+   "index": 33,
+   "tokens": [
+    116,
+    118,
+    119,
+    120
+   ],
+   "start": 69.63,
+   "end": 72.256,
+   "lines": null,
+   "text": "فوجدوا الفتاة المنهكة وأنقذوها"
+  },
+  {
+   "index": 34,
+   "tokens": [
+    121,
+    122,
+    123,
+    124,
+    125
+   ],
+   "start": 72.33,
+   "end": 74.26,
+   "lines": [
+    2,
+    3
+   ],
+   "text": "نجت جوليان من سقوط طائرة"
+  },
+  {
+   "index": 35,
+   "tokens": [
+    126,
+    127,
+    128,
+    129,
+    130
+   ],
+   "start": 74.28,
+   "end": 76.84,
+   "lines": null,
+   "text": "ثم نجت من عشرة أيام"
+  },
+  {
+   "index": 36,
+   "tokens": [
+    131,
+    132,
+    133
+   ],
+   "start": 76.86,
+   "end": 78.35,
+   "lines": null,
+   "text": "في قلب الأمازون"
+  },
+  {
+   "index": 37,
+   "tokens": [
+    134,
+    135,
+    136,
+    137
+   ],
+   "start": 78.68,
+   "end": 80.56,
+   "lines": null,
+   "text": "لكنها كانت الناجية الوحيدة"
+  },
+  {
+   "index": 38,
+   "tokens": [
+    138,
+    139,
+    140,
+    142
+   ],
+   "start": 80.58,
+   "end": 83.08,
+   "lines": [
+    3,
+    2
+   ],
+   "text": "من بين 92 شخصاً"
+  },
+  {
+   "index": 39,
+   "tokens": [
+    143,
+    144,
+    145
+   ],
+   "start": 83.1,
+   "end": 84.32000000000001,
+   "lines": null,
+   "text": "كانوا على متن الطائرة"
+  },
+  {
+   "index": 40,
+   "tokens": [
+    146,
+    147,
+    148,
+    149,
+    150
+   ],
+   "start": 84.34,
+   "end": 87.84,
+   "lines": null,
+   "text": "أحياناً تكون الرغبة في الحياة"
+  },
+  {
+   "index": 41,
+   "tokens": [
+    151,
+    152,
+    153,
+    154,
+    155
+   ],
+   "start": 87.86,
+   "end": 89.95,
+   "lines": null,
+   "text": "أقوى من كل احتمالات الموت"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "title",
+   "start": 0.0,
+   "art": "01_fall",
+   "trans": null,
+   "look": "dawn",
+   "end": 7.0,
+   "dur": 7.0
+  },
+  {
+   "id": "flight",
+   "start": 7.0,
+   "art": "02_plane_jungle",
+   "trans": "torn",
+   "end": 13.88,
+   "dur": 6.88
+  },
+  {
+   "id": "lightning",
+   "start": 13.88,
+   "art": "03_storm",
+   "trans": "flash",
+   "end": 19.04,
+   "dur": 5.16
+  },
+  {
+   "id": "breakup",
+   "start": 19.04,
+   "art": "04_breakup",
+   "trans": "punch",
+   "end": 23.0,
+   "dur": 3.96
+  },
+  {
+   "id": "freefall",
+   "start": 23.0,
+   "art": "05_freefall",
+   "trans": "torn",
+   "end": 30.3,
+   "dur": 7.3
+  },
+  {
+   "id": "waking",
+   "start": 30.3,
+   "art": "06_waking",
+   "trans": "flash",
+   "end": 37.14,
+   "dur": 6.84
+  },
+  {
+   "id": "wreckage",
+   "start": 37.14,
+   "art": "07_wreckage",
+   "trans": "slide",
+   "end": 43.92,
+   "dur": 6.78
+  },
+  {
+   "id": "advice",
+   "start": 43.92,
+   "art": "08_river",
+   "trans": "torn",
+   "end": 49.32,
+   "dur": 5.4
+  },
+  {
+   "id": "jungle",
+   "start": 49.32,
+   "art": "09_dark_jungle",
+   "trans": "slide",
+   "end": 55.68,
+   "dur": 6.36
+  },
+  {
+   "id": "ten-days",
+   "start": 55.68,
+   "art": "09_dark_jungle",
+   "trans": "flash",
+   "end": 61.5,
+   "dur": 5.82
+  },
+  {
+   "id": "hut",
+   "start": 61.5,
+   "art": "10_hut",
+   "trans": "torn",
+   "end": 65.68,
+   "dur": 4.18
+  },
+  {
+   "id": "rescue",
+   "start": 65.68,
+   "art": "11_rescue",
+   "trans": "slide",
+   "end": 72.33,
+   "dur": 6.65
+  },
+  {
+   "id": "twice",
+   "start": 72.33,
+   "art": "02_plane_jungle",
+   "trans": "torn",
+   "end": 78.68,
+   "dur": 6.35
+  },
+  {
+   "id": "only-one",
+   "start": 78.68,
+   "art": "12_seats",
+   "trans": "flash",
+   "end": 84.34,
+   "dur": 5.66
+  },
+  {
+   "id": "outro",
+   "start": 84.34,
+   "art": "01_fall",
+   "trans": "torn",
+   "end": 90.0,
+   "dur": 5.66
+  }
+ ],
+ "title": [
+  "الفتاة التي",
+  "سقطت من السماء",
+  "ونجت!"
+ ],
+ "credit": "إعداد وإخراج: Shaaib Beshr"
+}
